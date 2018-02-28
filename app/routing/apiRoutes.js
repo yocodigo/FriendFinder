@@ -34,23 +34,33 @@ module.exports = function(app) {
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body-parser middleware
     var newUser = req.body; 
-        // var scoreTotals = [];
-				// for (n = 0;  < data.length; n++) {
-					// var userScore = [];
-					// for (i = 0; i < friendsData[0].scores.length; i++) {
-    var x;
+     
+    // console.log("The new user's score array: " + req.body.scores);
+    // console.log("User  in friendsData array: " + friendsData[0].scores);
+    var scoreTotals = [];
         
     for (n = 0; n < friendsData.length; n++) {
-      var scoreTotals = [];
-      
-      for (i = 0; i < friendsData[n].scores.length; i++) {
-        x = Math.abs(parseInt(friendsData[n].scores[i]) - parseInt(newUser.scores[i]));
-        scoreTotals.push(x);
+      var x = 0;
+      var friendsDataValue = friendsData[n];
+      for (i = 0; i < friendsDataValue.scores.length; i++) {
+        var currentScore = friendsDataValue.scores[i];
+        x += Math.abs(parseInt(currentScore) - parseInt(newUser.scores[i]));
       }
+      scoreTotals.push(x);
+      // console.log(x);
     }
+    console.log("--------------------------------------");
+    var totalValues = parseInt(scoreTotals);
     console.log(scoreTotals);
+    var min = Math.min(...scoreTotals);
+
+    // console.log(scoreTotals[3] + scoreTotals[4]);
+    // console.log(scoreTotals.indexOf(Math.min(parseInt(scoreTotals))));
+    var match = scoreTotals.indexOf(min);
+    
+    //The new user's responses is stored into friendsData
       friendsData.push(req.body);
-      res.json(false);
+      res.json(friendsData[match]);
   });
 
   // ---------------------------------------------------------------------------
