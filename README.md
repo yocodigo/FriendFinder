@@ -6,13 +6,16 @@ This app will determine who, from a pool of user profiles, is a friend match bas
 
 
 
-### Prerequisites
+## Packages Required
+* Express: Fast, unopinionated, minimalist web framework for node. Link: https://www.npmjs.com/package/express
+* Body Parser: Parse incoming request bodies in a middleware before your handlers, available under the req.body property. Link for more information: https://www.npmjs.com/package/body-parser
+* Path: This is an exact copy of the NodeJS ’path’ module published to the NPM registry. Link: https://www.npmjs.com/package/path
 
 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+* 
 
 Say what the step will be
 
@@ -49,12 +52,4 @@ Give an example
 ```
 
 ## Deployment
-
 https://sheltered-ridge-54942.herokuapp.com/
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
