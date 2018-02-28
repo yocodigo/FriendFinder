@@ -2,17 +2,13 @@
 
 This app will determine who, from a pool of user profiles, is a friend match based on your responses. There are a series of 10 statements you will evaluate by making a selection from a scale of one to five, one being you strongly disagree with the statement and five you strongly agree with the statement. Based on your responses, the algorithm will calculate the scores tallied from each user and determine who's scores most closely resemble yours.
 
-## Getting Started
+## Demo
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
 
-```
-Give examples
-```
 
 ### Installing
 
