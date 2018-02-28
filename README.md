@@ -24,7 +24,7 @@ from your terminal:
 * Open your terminal and cd into the FriendFinder directory
 * Start the server by enter the following node server.js. This is what your screen should look like:
 ```
-!(https://github.com/yocodigo/FriendFinder/blob/master/friendfinder%20terminal.png?raw=true)
+!(https://raw.githubusercontent.com/yocodigo/FriendFinder/master/friendfinder%20terminal.png)
 ```
 
 * Open your browser. In the address bar, enter localhost:3000. Note, the server is set to listen on port 3000. 
