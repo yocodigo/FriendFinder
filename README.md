@@ -1,6 +1,6 @@
 # FriendFinder
 
-Fill out the survey and find out who is a friend match based on your responses. You'll respond to a series of 10 statements. You will choose from a scale of one to five, one being you strongly disagree with the statement and five you strongly agree with the statement.
+This app will determine who, from a pool of user profiles, is a friend match based on your responses. There are a series of 10 statements you will evaluate by making a selection from a scale of one to five, one being you strongly disagree with the statement and five you strongly agree with the statement. Based on your responses, the algorithm will calculate the scores tallied from each user and determine who's scores most closely resemble yours.
 
 ## Getting Started
 
