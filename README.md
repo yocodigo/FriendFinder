@@ -9,43 +9,29 @@ Express server will need the following packages:
 * Path: This is an exact copy of the NodeJS ’path’ module published to the NPM registry. Link: https://www.npmjs.com/package/path
 
 ## Deployement
+```
 https://sheltered-ridge-54942.herokuapp.com/
+```
 
 ### Installing
+from your terminal:
+* git clone git@github.com:yocodigo/FriendFinder.git
+* cd FriendFinder
+* npm install
+ 
+## Run the Application 
+locally and access it in your browser, first set the PORT environment variable to the value of your choice. An example is shown below.
 
-* 
+export PORT=3030
+After the PORT environment variable has been set, run the Node.js application with the command below.
 
-Say what the step will be
+node server.js
+The application will now be running locally on PORT, in this case that is port 3030. You can then access it locally from your browser at the URL localhost:PORT, in this case localhost:3030.
 
+
+### Styling
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+Bootstrap 3.3.6
+CDN: https://getbootstrap.com/docs/3.3/getting-started/
 ```
 
