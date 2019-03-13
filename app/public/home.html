@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset=UTF-8">
-	<title>FriendFinder</title>
+    <title>FriendFinder</title>
 
-	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder
+        </h1>
+        <hr />
+        <h2 class="">Answer a few basic questions.</h2>
+        <h2 class="">Then find the friend with the greatest compatibility!</h2>
+        <br />
 
-</head>
-<body data-gr-c-s-loaded="true">
+        <div class="">
+          <a href="/survey"
+            ><button type="button" class="btn btn-lg btn-primary">
+              <h4>
+                <span class="glyphicon glyphicon-list-alt"></span> Go to Survey
+              </h4>
+            </button></a
+          >
+        </div>
+      </div>
 
-	<div class="container">
-		
-		<div class="jumbotron">
-			<h1 class=""><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
-			<hr>
-			<h2 class="">Answer a few basic questions. </h2>
-			<h2 class="">Then find the friend with the greatest compatibility!</h2>
-			<br>
-
-			<div class="">
-				<a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>	
-			</div>
-
-		</div>
-
-	    <footer class="footer">
-	      <div class="container">
-		        <p><a href="./app/data/friends">API Friends List</a> | <a href="https://github.com/yocodigo/FriendFinder">GitHub Repo</a></p>
-	      </div>
-	    </footer>
-
-	</div>
-
-	
-
-</body></html>
-
+      <footer class="footer">
+        <div class="container">
+          <p>
+            <a href="./app/data/friends">API Friends List</a> |
+            <a href="https://github.com/yocodigo/FriendFinder">GitHub Repo</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
