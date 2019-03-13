@@ -27,7 +27,7 @@ module.exports = function(app) {
     // req.body is available since we're using the body-parser middleware
     const newUser = req.body,
       scoreTotals = [];
-      
+
     // for (n = 0; n < friendsData.length; n++) {
     for (let element of friendsData) {
       let x = 0;
@@ -39,10 +39,9 @@ module.exports = function(app) {
       scoreTotals.push(x);
     }
     console.log("--------------------------------------");
-    const totalValues = parseInt(scoreTotals);
+    const min = Math.min(...scoreTotals),
+        match = scoreTotals.indexOf(min);
     console.log(scoreTotals);
-    const min = Math.min(...scoreTotals);
-    const match = scoreTotals.indexOf(min);
 
     //The new user's responses is stored into friendsData
     friendsData.push(req.body);
