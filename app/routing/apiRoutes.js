@@ -70,7 +70,5 @@ module.exports = function(app) {
   app.post("/app/data/clear", function() {
     // Empty out the arrays of data
     friendsData = [];
-
-    // console.log(friendsData);
   });
 };
