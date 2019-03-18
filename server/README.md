@@ -27,9 +27,6 @@ from your terminal:
 ![alt text](https://github.com/yocodigo/FriendFinder/blob/master/screenshots/friendfinder.png?raw=true)
 ```
 
-* Open your browser. In the address bar, enter localhost:3000. Note, the server is set to listen on port 3000. 
-
-
 ### Styling
 ```
 Bootstrap 3.3.6
