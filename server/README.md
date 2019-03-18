@@ -21,8 +21,8 @@ from your terminal:
 * npm install
  
 ## Run the Application 
-* Open your terminal and cd into the FriendFinder directory
-* Start the server by enter the following node server.js. This is what your screen should look like:
+* Open your terminal and cd into the server directtory: FriendFinder/Server
+* Run the app by entering `npm run dev` in your terminal . This is what your screen should look like:
 ```
 ![alt text](https://github.com/yocodigo/FriendFinder/blob/master/screenshots/friendfinder.png?raw=true)
 ```
