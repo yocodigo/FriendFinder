@@ -15,11 +15,11 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
   // Path example of joining an absolute and a relative path!
   app.get("/survey", function(req, res) {
-    res.sendFile(path.join(__dirname, "../../client/public/survey.html"));
+    res.sendFile(path.join(__dirname, "../client/public/survey.html"));
   });
 
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../../client/public/home.html"));
+    res.sendFile(path.join(__dirname, "../client/public/home.html"));
   });
   // If no matching route is found default to home
   // Note: This route path will match abcd, abxcd, abRANDOMcd, ab123cd, and so on.
@@ -28,6 +28,6 @@ module.exports = function(app) {
   // })
   //thus the star is a placeholder for the wild card - anything goes
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../../client/public/survey.html"));
+    res.sendFile(path.join(__dirname, "../client/public/survey.html"));
   });
 };

@@ -1,4 +1,4 @@
-let friendsData = require("../../client/data/friends"); // Source of friend information
+let friendsData = require("../client/data/friends"); // Source of friend information
 
 module.exports = function(app) {
   // API GET request - Route renders JSON of friend data
@@ -29,10 +29,7 @@ module.exports = function(app) {
     friendsData.push(req.body);
     res.json(friendsData[match]);
   });
-  // app.post("/client/data/clear", function() {
-  app.post("../../client/data/clear", function() {
-    // double check 1st argument
-    // Empty out the arrays of data
-    friendsData = [];
+  app.post("/client/data/clear", function() {
+    friendsData = []; // Empty out the arrays of data
   });
 };
